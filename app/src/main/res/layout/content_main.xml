@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.rattanaporn.ch3.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@drawable/bg4">
+
+
+    <TextView
+        android:id="@+id/txthead"
+        android:layout_width="339dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Convert Degree Of  ํF and  ํC "
+        android:textColor="#FFFAFA"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="23dp" />
+
+    <EditText
+        android:id="@+id/edtCel"
+        android:layout_width="135dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="58dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColorLink="#FFE4E1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txthead" />
+
+    <Button
+        android:id="@+id/btnCtoF"
+        android:layout_width="129dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="61dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="244dp"
+        android:background="#F5F5F5"
+        android:onClick="submit"
+        android:text="C convert to F"
+        android:textColor="#2F4F4F"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtMes"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnFtoC"
+        app:layout_constraintTop_toBottomOf="@id/txthead" />
+
+    <EditText
+        android:id="@+id/edtFah"
+        android:layout_width="135dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="172dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColorLink="#FFE4E1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtCel" />
+
+    <Button
+        android:id="@+id/btnFtoC"
+        android:layout_width="130dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="61dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginTop="140dp"
+        android:background="#E6E6FA"
+        android:onClick="submit"
+        android:text="F convert to C"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtMes"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtCel" />
+
+    <TextView
+        android:id="@+id/txtMes"
+        android:layout_width="335dp"
+        android:layout_height="38dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="140dp"
+        android:gravity="center"
+        android:textColor="#F5FFFA"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtFah" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="63dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginStart="52dp"
+        android:text="Celcein Degree :"
+        android:textColor="#FFFAFA"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/edtCel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="62dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginStart="42dp"
+        android:text="Fahrenheit Degree :"
+        android:textColor="#FFFAFA"
+        app:layout_constraintBottom_toTopOf="@+id/btnFtoC"
+        app:layout_constraintEnd_toStartOf="@+id/edtFah"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
